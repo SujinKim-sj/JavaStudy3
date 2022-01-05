@@ -3,8 +3,12 @@ package com.java.s1.student;
 import java.util.Scanner;
 
 public class StudentUtil {
+	Scanner sc;
 	
 	//학생 객체를 생성하고 정보를 입력 받는 곳
+	public void initUtil() {
+		this.sc = new Scanner(System.in);
+	}
 	
 	public Student search(Student[] students) {
 		//학생의 번호를 입력
@@ -29,7 +33,6 @@ public class StudentUtil {
 	public Student[] makeStudents() {
 		//학생의 수를 입력 받음
 		//키보드로 부터 이름, 번호, 국어 영어 수학 입력
-		Scanner sc = new Scanner(System.in);
 		System.out.println("학생의 수를 입력");
 		int count = sc.nextInt();
 		Student [] students = new Student[count];
@@ -57,7 +60,6 @@ public class StudentUtil {
 	
 	public Student makeStudent() {
 		//키보드로 부터 이름, 번호, 국어 영어 수학 입력 리턴
-		Scanner sc = new Scanner(System.in);
 		System.out.println("이름 입력");
 		String name = sc.next();
 		System.out.println("번호 입력");
