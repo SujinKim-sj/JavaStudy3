@@ -13,7 +13,7 @@ public class StudentMain {
 		student.eng = 10;
 		student.math = 10;
 //		student.hello();
-		student.makeTotal();
+//		student.makeTotal();
 //		System.out.println("참조변수 student : " + student);
 //		System.out.println("Student Total : " + student.total);
 //		
@@ -25,6 +25,7 @@ public class StudentMain {
 //		student2.makeTotal();
 //		System.out.println("Student2 Total : " + student2.total);
 //		
+		
 		System.out.println("종료");
 		
 	}

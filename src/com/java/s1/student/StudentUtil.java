@@ -50,7 +50,7 @@ public class StudentUtil {
 			student.eng = sc.nextInt();
 			System.out.println("수학 점수 입력");
 			student.math = sc.nextInt();
-			
+			student.makeTotal();
 			students[i] = student;
 		}
 		
@@ -79,6 +79,7 @@ public class StudentUtil {
 		student.kor = kor;
 		student.eng = eng;
 		student.math = math;
+		student.makeTotal();
 		
 		return student;
 	}

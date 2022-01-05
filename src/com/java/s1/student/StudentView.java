@@ -7,12 +7,9 @@ public class StudentView {
 	public void viewStudents(Student[] students) {
 		
 		for(int i = 0; i < students.length; i++) {
-	
-			System.out.println("이름 : " + students[i].name);
-			System.out.println("번호 : " + students[i].num);
-			System.out.println("국어 점수 : " + students[i].kor);
-			System.out.println("영어 점수 : " + students[i].eng);
-			System.out.println("수학 점수 : " + students[i].math);
+			//Student student = students[i];
+			//this.viewStudent(student);
+			this.viewStudent(students[i]);
 		}
 	}
 	
@@ -23,6 +20,9 @@ public class StudentView {
 		System.out.println("국어 점수 : " + student.kor);
 		System.out.println("영어 점수 : " + student.eng);
 		System.out.println("수학 점수 : " + student.math);
+		System.out.println("총점 : " + student.total);
+		System.out.println("평균 : " + student.avg);
+	
 	}
 	
 	public void viewMessage(String message) {
