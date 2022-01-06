@@ -8,7 +8,7 @@ public class StudentController {
 		Scanner sc = new Scanner(System.in);
 		boolean check = true;
 		StudentUtil su = new StudentUtil();
-		su.initUtil();		//초기화
+		//su.initUtil();		//초기화
 		StudentView sv = new StudentView();
 		Student[] students = null;
 		Student student = null;
@@ -31,22 +31,22 @@ public class StudentController {
 			case 2:
 				System.out.println("출력");
 				if(students != null) {
-					sv.viewStudents(students);					
+					sv.view(students);					
 				}else {
-					sv.viewMessage("학생 정보를 먼저 입력하세요");
+					sv.view("학생 정보를 먼저 입력하세요");
 				}
 				break;
 			case 3:
 				if(students == null) {
-					sv.viewMessage("검색 결과가 없습니다");
+					sv.view("검색 결과가 없습니다");
 					continue;
 				}
 				student = su.search(students);
 
 				if(student != null) {
-					sv.viewStudent(student);											
+					sv.view(student);											
 				}else {
-					sv.viewMessage("검색 결과가 없습니다");
+					sv.view("검색 결과가 없습니다");
 				}
 				break;
 			default:
