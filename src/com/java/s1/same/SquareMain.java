@@ -15,6 +15,7 @@ public class SquareMain {
 		System.out.println(check);
 		
 		check = s1.same(s2);
+		check = s2.same(s1);
 		System.out.println(check);
 	}
 
